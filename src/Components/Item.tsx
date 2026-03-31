@@ -36,8 +36,8 @@ export default function Item({ name, price, photo, rating, onSale, newPrice }: I
                         <img src={starRate} alt="arrow" className="w-7" />
                         <p>{rating}/5</p>
                     </div>
-                    <div className={`transition-all duration-300 ease-in-out ${(active || window.innerWidth < 1024) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
-                        }`}>
+                    <div className={`transition-all duration-300 ease-in-out ${active ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
+                        } lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto`}>
                         <Button
                             text="Shop Now"
                             active={true}
