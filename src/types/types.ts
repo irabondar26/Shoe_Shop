@@ -9,5 +9,7 @@ export interface Product {
   popularity: number;
   onSale: boolean,
   newPrice: number;
-  audience:string;
+  audience: string;
+  category: string;
+  color: string;
 }

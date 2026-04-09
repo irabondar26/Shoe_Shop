@@ -4,24 +4,21 @@ import Item from "./Item";
 import arrowWhite from "../Img/arrowWhite.svg"
 
 type DropdownProps = {
-    audience: string;
+    category: string;
     data: Product[];
 }
 
-export default function Dropdown({ audience, data }: DropdownProps) {
+export default function Dropdown({ category, data }: DropdownProps) {
     const [visibleCount, setVisibleCount] = useState(8);
     const visibleData = data.slice(0, visibleCount);
-
-    console.log(data);
-
 
     const handleLoadMore = () => {
         setVisibleCount((prev) => prev + 4);
     };
 
-    return (
-        <div className="pb-15 px-10 sm:px-20 lg:px-30 xl:px-40 flex flex-col items-center">
-            <h3 className="mb-14 bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium w-[100%]"><span className="font-[Pacifico]">{audience}</span>  sandals</h3>
+    return data.length !== 0
+        ? (<div className="pb-15 flex flex-col items-center">
+            <h3 className="mb-14 bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium w-full font-[Pacifico]">{category}</h3>
             <div className="grid grid-cols-1 min-[420px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 auto-rows-auto gap-4">
                 {visibleData.map((el) =>
                     <div
@@ -50,5 +47,6 @@ export default function Dropdown({ audience, data }: DropdownProps) {
                     <img src={arrowWhite} alt="arrow" className="w-4 h-4 rotate-90" />
                 </button>
             }
-        </div>);
+        </div>)
+        :null;
 }

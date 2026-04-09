@@ -1,4 +1,5 @@
 import raw from "../data.json";
+import { NavLink } from "react-router-dom";
 import { Product } from "../types/types"
 import Button from "../Components/Button"
 import SliderShoes from "../Components/SliderShoes"
@@ -27,12 +28,12 @@ function MainPage() {
             <SliderShoes title="On sale" data={onSale} />
             <section className="relative flex justify-center items-center px-5 pb-5 md:pb-10 lg:px-0">
                 <img src={SeconMainImg} alt="Junior Shoes" className="max-h-[90vh] w-auto" />
-                <Button
-                    text="See more"
-                    active={true}
-                    customClass="absolute bottom-15 bg-yellow-400 px-4 py-2 sm:px-6 sm:py-3 font-bold"
-                    addContent={
-                        <img src={Arrowwhite} className="w-5 h-5"></img>} />
+                <NavLink
+                    className="rounded-full flex items-center justify-center gap-2 absolute bottom-15 bg-yellow-400 px-4 py-2 sm:px-6 sm:py-3 font-bold"
+                    to="/kids">
+                    See more
+                    <img src={Arrowwhite} className="w-5 h-5" />
+                </NavLink>
             </section>
         </>
     )

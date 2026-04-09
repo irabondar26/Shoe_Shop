@@ -10,7 +10,9 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "black"
     },
     {
         "id": 2,
@@ -23,7 +25,9 @@
         "popularity": 4,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "gray"
     },
     {
         "id": 3,
@@ -36,7 +40,9 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "brown"
     },
     {
         "id": 4,
@@ -49,7 +55,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1959,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "white"
     },
     {
         "id": 5,
@@ -62,7 +70,9 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 1763,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "black"
     },
     {
         "id": 6,
@@ -75,7 +85,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1959,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "red"
     },
     {
         "id": 7,
@@ -88,7 +100,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2535,
-        "audience": "man"
+        "audience": "man",
+        "category": "running",
+        "color": "black"
     },
     {
         "id": 8,
@@ -101,7 +115,9 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 2249,
-        "audience": "man"
+        "audience": "man",
+        "category": "running",
+        "color": "black"
     },
     {
         "id": 9,
@@ -114,7 +130,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2099,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "beige"
     },
     {
         "id": 10,
@@ -127,7 +145,9 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man"
+        "audience": "man",
+        "category": "sandals",
+        "color": "black"
     },
     {
         "id": 11,
@@ -140,7 +160,9 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 2099,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "blue"
     },
     {
         "id": 12,
@@ -153,7 +175,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1949,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "beige"
     },
     {
         "id": 13,
@@ -166,7 +190,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2239,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "red"
     },
     {
         "id": 14,
@@ -179,7 +205,9 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 1819,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "white"
     },
     {
         "id": 15,
@@ -192,7 +220,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1425,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "white"
     },
     {
         "id": 16,
@@ -205,7 +235,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2729,
-        "audience": "man"
+        "audience": "man",
+        "category": "lifestile",
+        "color": "white"
     },
     {
         "id": 17,
@@ -218,7 +250,9 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman"
+        "audience": "woman",
+        "category": "running",
+        "color": "brown"
     },
     {
         "id": 18,
@@ -231,7 +265,9 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman"
+        "audience": "woman",
+        "category": "lifestile",
+        "color": "beige"
     },
     {
         "id": 19,
@@ -244,7 +280,9 @@
         "popularity": 3,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman"
+        "audience": "woman",
+        "category": "lifestile",
+        "color": "black"
     },
     {
         "id": 20,
@@ -257,7 +295,9 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "kid"
+        "audience": "kid",
+        "category": "running",
+        "color": "pink"
     },
     {
         "id": 21,
@@ -270,7 +310,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 844,
-        "audience": "kid"
+        "audience": "kid",
+        "category": "lifestile",
+        "color": "blue"
     },
     {
         "id": 22,
@@ -283,7 +325,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1199,
-        "audience": "kid"
+        "audience": "kid",
+        "category": "lifestile",
+        "color": "beige"
     },
     {
         "id": 23,
@@ -296,7 +340,9 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 749,
-        "audience": "kid"
+        "audience": "kid",
+        "category": "lifestile",
+        "color": "blue"
     },
     {
         "id": 24,
@@ -309,7 +355,9 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "kid"
+        "audience": "kid",
+        "category": "lifestile",
+        "color": "brown"
     },
     {
         "id": 25,
@@ -322,6 +370,23 @@
         "popularity": 3,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman"
+        "audience": "woman",
+        "category": "lifestile",
+        "color": "beige"
+    },
+    {
+        "id": 26,
+        "name": "New Balance U204L",
+        "brand": "New Balance",
+        "model": "Spezial",
+        "price": 3299,
+        "photo": "https://newbalance.cz/picture/fit-in/1000x1000/smart/filters:fill(white):quality(75)/858980af06a4ba8c007346ef5c378763.png",
+        "rating": 0,
+        "popularity": 5,
+        "onSale": false,
+        "newPrice": 0,
+        "audience": "man",
+        "category": "lifestile",
+        "color": "beige"
     }
 ]

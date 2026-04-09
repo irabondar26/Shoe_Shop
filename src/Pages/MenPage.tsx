@@ -1,0 +1,98 @@
+import { useState } from "react";
+import Dropdown from "../Components/DropdownList";
+import raw from "../data.json";
+import { Product } from "../types/types";
+import Search from "../Img/Search.svg";
+import Filter from "../Img/filter.svg";
+import FilterPanel from "../Components/FilterPanel";
+
+const formatCategoryName = (text: string) => {
+    return text
+        .replace(/([A-Z])/g, ' $1')
+        .replace(/^./, (str) => str.toUpperCase())
+        .trim();
+};
+
+
+export default function MenPage({ category }: { category: string }) {
+
+    const data = raw as Product[];
+
+    const [searchText, setSearchText] = useState("");
+    const [filterData, setFilterData] = useState(data);
+    const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+
+    const handleSearch = () => {
+        if (!searchText.trim()) {
+            setFilterData(data);
+            return;
+        }
+
+        const results = data.filter((item) =>
+            [item.name, item.brand, item.model, item.audience].some((field) =>
+                field?.toLowerCase().includes(searchText.toLowerCase())
+            )
+        );
+        setFilterData(results);
+    };
+
+    const filteredByAudience = filterData.filter(item => item.audience === "man");
+
+
+    return (
+        <>
+            <div className=" px-10 sm:px-20 lg:px-30 xl:px-40">
+                <section className="pt-7 mx-auto flex justify-center gap-x-2 md:gap-x-5 mb-10">
+                    <div className="relative w-121 h-14">
+                        <input
+                            type="text"
+                            value={searchText}
+                            onChange={(e) => setSearchText(e.target.value)}
+                            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+                            className="w-full h-full px-8 bg-gray-100 rounded-full placeholder-blue-900 focus:ring-2 focus:ring-blue-900 outline-none text-gray-500" placeholder="Search..." />
+                        <button onClick={() => handleSearch()} className="absolute bottom-3.5 right-6 p-1 hover:scale-110 transition-transform">
+                            <img src={Search} alt="search" className="w-5 h-5 hover:cursor-pointer" />
+                        </button>
+                    </div>
+                    <button className="px-3 bg-gray-100 rounded-full"
+                        onClick={() => setIsFilterOpen(!isFilterOpen)}>
+                        <img src={Filter} alt="filter" className="w-8 h-8" />
+                    </button>
+                </section>
+                <section className="pt-15">
+                    {category === "allshoes" ? (
+                        <>
+                            <Dropdown
+                                category="Lifestyle"
+                                data={filteredByAudience.filter(item => item.category === "lifestile")}
+                            />
+                            <Dropdown
+                                category="Running"
+                                data={filteredByAudience.filter(item => item.category === "running")}
+                            />
+                            <Dropdown
+                                category="Sandals"
+                                data={filteredByAudience.filter(item => item.category === "sandals")}
+                            />
+                            <Dropdown
+                                category="Slip On"
+                                data={filteredByAudience.filter(item => item.category === "slipOn")}
+                            />
+                        </>
+                    )
+                    : filteredByAudience.filter(item => item.category === category).length === 0 ?
+                        (<h2 className="mb-14 bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium">No products found</h2>):(
+                    <Dropdown
+                        category={formatCategoryName(category)}
+                        data={filteredByAudience.filter(item => item.category === category)}
+                    />
+                    )}
+                </section>
+                {isFilterOpen ?
+                    <FilterPanel setIsFilterOpen={setIsFilterOpen} data={filterData} />
+                    : null}
+            </div>
+        </>
+    );
+}
