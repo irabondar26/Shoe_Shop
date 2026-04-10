@@ -10,7 +10,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "black"
     },
@@ -25,7 +25,7 @@
         "popularity": 4,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "gray"
     },
@@ -40,7 +40,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "brown"
     },
@@ -55,7 +55,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1959,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "white"
     },
@@ -70,7 +70,7 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 1763,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "black"
     },
@@ -85,7 +85,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1959,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "red"
     },
@@ -100,7 +100,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2535,
-        "audience": "man",
+        "audience": "men",
         "category": "running",
         "color": "black"
     },
@@ -115,7 +115,7 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 2249,
-        "audience": "man",
+        "audience": "men",
         "category": "running",
         "color": "black"
     },
@@ -130,7 +130,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2099,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "beige"
     },
@@ -145,7 +145,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man",
+        "audience": "men",
         "category": "sandals",
         "color": "black"
     },
@@ -160,7 +160,7 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 2099,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "blue"
     },
@@ -175,7 +175,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1949,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "beige"
     },
@@ -190,7 +190,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2239,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "red"
     },
@@ -205,7 +205,7 @@
         "popularity": 4,
         "onSale": true,
         "newPrice": 1819,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "white"
     },
@@ -220,7 +220,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1425,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "white"
     },
@@ -235,7 +235,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 2729,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "white"
     },
@@ -250,7 +250,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman",
+        "audience": "women",
         "category": "running",
         "color": "brown"
     },
@@ -265,7 +265,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman",
+        "audience": "women",
         "category": "lifestile",
         "color": "beige"
     },
@@ -280,7 +280,7 @@
         "popularity": 3,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman",
+        "audience": "women",
         "category": "lifestile",
         "color": "black"
     },
@@ -295,7 +295,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "kid",
+        "audience": "kids",
         "category": "running",
         "color": "pink"
     },
@@ -310,7 +310,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 844,
-        "audience": "kid",
+        "audience": "kids",
         "category": "lifestile",
         "color": "blue"
     },
@@ -325,7 +325,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 1199,
-        "audience": "kid",
+        "audience": "kids",
         "category": "lifestile",
         "color": "beige"
     },
@@ -340,7 +340,7 @@
         "popularity": 5,
         "onSale": true,
         "newPrice": 749,
-        "audience": "kid",
+        "audience": "kids",
         "category": "lifestile",
         "color": "blue"
     },
@@ -355,7 +355,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "kid",
+        "audience": "kids",
         "category": "lifestile",
         "color": "brown"
     },
@@ -370,7 +370,7 @@
         "popularity": 3,
         "onSale": false,
         "newPrice": 0,
-        "audience": "woman",
+        "audience": "women",
         "category": "lifestile",
         "color": "beige"
     },
@@ -385,7 +385,7 @@
         "popularity": 5,
         "onSale": false,
         "newPrice": 0,
-        "audience": "man",
+        "audience": "men",
         "category": "lifestile",
         "color": "beige"
     }

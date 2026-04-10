@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Dropdown from "../Components/DropdownList";
 import raw from "../data.json";
 import { Product } from "../types/types";
@@ -6,22 +6,31 @@ import Search from "../Img/Search.svg";
 import Filter from "../Img/filter.svg";
 import FilterPanel from "../Components/FilterPanel";
 
+const formatCategoryName = (text: string) => {
+    return text
+        .replace(/([A-Z])/g, ' $1')
+        .replace(/^./, (str) => str.toUpperCase())
+        .trim();
+};
 
-export default function KidsPage() {
+const CATEGORY_ORDER = ["lifestile", "running", "sandals", "slipOn"];
+
+
+export default function ProductPage({ category, audience }: { category: string, audience: string }) {
 
     const data = raw as Product[];
 
     const [searchText, setSearchText] = useState("");
-    const [filterData, setFilterData] = useState(data);
+
+    const filteredByAudience = data.filter(item => item.audience === audience);
+    const [filterData, setFilterData] = useState(filteredByAudience);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+    useEffect(() => {
+        setFilterData(data.filter(item => item.audience === audience));
+        setSearchText("");
+    }, [audience, category, data]);
 
-
-    // const allShoes = filterData.filter((item) => item.audience === "kid");
-    const running = filterData.filter((item) => item.audience === "kid" && item.category === "running");
-    const lifestile = filterData.filter((item) => item.audience === "kid" && item.category === "lifestile");
-    const sandals = filterData.filter((item) => item.audience === "kid" && item.category === "sandals");
-    const slipOn = filterData.filter((item) => item.audience === "kid" && item.category === "slipOn");
 
     const handleSearch = () => {
         if (!searchText.trim()) {
@@ -40,8 +49,8 @@ export default function KidsPage() {
 
     return (
         <>
-            <div className="">
-                <section className="pt-7 mx-auto flex justify-center gap-x-5 mb-10">
+            <div className=" px-10 sm:px-20 lg:px-30 xl:px-40">
+                <section className="pt-7 mx-auto flex justify-center gap-x-2 md:gap-x-5 mb-10">
                     <div className="relative w-121 h-14">
                         <input
                             type="text"
@@ -59,10 +68,30 @@ export default function KidsPage() {
                     </button>
                 </section>
                 <section className="pt-15">
-                    <Dropdown category="Lifestile" data={lifestile} />
-                    <Dropdown category="Running" data={running} />
-                    <Dropdown category="Sandals" data={sandals} />
-                    <Dropdown category="Slip On" data={slipOn} />
+                    {category === "allshoes" ? (
+                        CATEGORY_ORDER.map(category => {
+                            const categoryData = filterData.filter(item => item.category === category);
+
+                            if (categoryData.length === 0) return null;
+
+                            return (
+                                <Dropdown
+                                    key={category}
+                                    category={formatCategoryName(category)}
+                                    data={categoryData}
+                                />
+                            );
+                        })
+                    ) : (
+                        filterData.filter(item => item.category === category).length === 0 ? (
+                            <h2 className="mb-14 bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium">No products found</h2>
+                        ) : (
+                            <Dropdown
+                                category={formatCategoryName(category)}
+                                data={filterData.filter(item => item.category === category)}
+                            />
+                        )
+                    )}
                 </section>
                 {isFilterOpen ?
                     <FilterPanel setIsFilterOpen={setIsFilterOpen} data={filterData} />

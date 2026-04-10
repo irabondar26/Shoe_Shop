@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Button from "./Button"
 import Logo from "../Img/logo.svg"
 import Comunication from "../Img/comunication.svg"
@@ -15,11 +15,23 @@ interface NavigationItem {
     submenu?: string[];
 }
 
+const getActiveFromPath = (path: string) => {
+    if (path.includes("/men")) return "Men";
+    if (path.includes("/women")) return "Women";
+    if (path.includes("/kids")) return "Kids";
+    if (path.includes("/other")) return "Other";
+    return "Home";
+};
+
 export default function Header() {
-    const [activeButton, setActiveButton] = useState("Main");
+    const location = useLocation();
+
+    const [activeButton, setActiveButton] = useState<string>(() => getActiveFromPath(location.pathname));
     const [isOpenHeader, setIsOpenHeader] = useState(false);
     const [activeSubmenu, setActiveSubmenu] = useState<NavigationItem | null>(null);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     useEffect(() => {
         const handleResize = () => {
@@ -33,28 +45,52 @@ export default function Header() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    useEffect(() => {
+        const newActive = getActiveFromPath(location.pathname);
+        setActiveButton(newActive);
+        setIsOpenHeader(false);
+    }, [location.pathname])
+
+    useEffect(() => {
+        const controlHeader = () => {
+            if (typeof window !== 'undefined') {
+                if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                    setIsVisible(false);
+                } else {
+                    setIsVisible(true);
+                }
+                setLastScrollY(window.scrollY);
+            }
+        };
+
+        window.addEventListener('scroll', controlHeader);
+        return () => {
+            window.removeEventListener('scroll', controlHeader);
+        };
+    }, [lastScrollY]);
+
 
     const navigation = [
-        { name: "Home", id: "Main", to: "/" },
+        { name: "Home", id: "Home", to: "/" },
         {
             name: "Men",
             id: "Men",
             to: "/men",
-            defaultTo:"/men/allshoes",
+            defaultTo: "/men/allshoes",
             submenu: ["All Shoes", "Lifestile", "Running", "Sandals", "Slip Ons"]
         },
         {
             name: "Women",
             id: "Women",
             to: "/women",
-            defaultTo:"/women/allshoes",
+            defaultTo: "/women/allshoes",
             submenu: ["All Shoes", "Lifestile", "Running", "Sandals", "Slip Ons"]
         },
         {
             name: "Kids",
             id: "Kids",
             to: "/kids",
-            defaultTo:"/kids/allshoes",
+            defaultTo: "/kids/allshoes",
             submenu: ["All Shoes", "Lifestile", "Running", "Sandals", "Slip Ons"]
         },
         {
@@ -65,7 +101,8 @@ export default function Header() {
     ];
 
     return (
-        <div>
+        <div className={`bg-white fixed top-0 left-0 w-full z-50 transition-transform duration-500 shadow-md 
+            ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
             <section className="bg-gray-100">
                 <ul className="flex justify-end py-4 px-10 text-sm text-gray-500 sm:px-20 lg:px-30 xl:px-40">
                     <li><a>Help</a></li>
@@ -104,7 +141,10 @@ export default function Header() {
                                         <NavLink
                                             to={`${activeSubmenu.to}/${sub.toLowerCase().replace(" ", "")}`}
                                             className="text-white hover:text-yellow-400"
-                                            onClick={() => setIsOpenHeader(false)}
+                                            onClick={() => {
+                                                setIsOpenHeader(false);
+                                                setActiveSubmenu(null);
+                                            }}
                                         >
                                             {sub}
                                         </NavLink>
@@ -121,6 +161,7 @@ export default function Header() {
                                             if (isMobile && item.submenu) {
                                                 e.preventDefault();
                                                 setActiveSubmenu(item);
+                                                setActiveButton(item.id);
                                             } else {
                                                 setIsOpenHeader(false);
                                                 setActiveButton(item.id);
@@ -137,9 +178,9 @@ export default function Header() {
                                         <ul className="absolute top-full left-1/2 -translate-x-1/2 mt-2 flex gap-6 bg-white/95 backdrop-blur-sm border border-gray-200 py-2 px-8 rounded-full shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                                             {item.submenu.map((sub) => (
                                                 <li key={sub}>
-                                                    <NavLink 
-                                                    to={`${item.to}/${sub.toLowerCase().replace(" ", "")}`} 
-                                                    className="text-gray-600 hover:text-blue-900 text-nowrap">
+                                                    <NavLink
+                                                        to={`${item.to}/${sub.toLowerCase().replace(" ", "")}`}
+                                                        className="text-gray-600 hover:text-blue-900 text-nowrap">
                                                         {sub}
                                                     </NavLink>
                                                 </li>

@@ -30,7 +30,7 @@ function MainPage() {
                 <img src={SeconMainImg} alt="Junior Shoes" className="max-h-[90vh] w-auto" />
                 <NavLink
                     className="rounded-full flex items-center justify-center gap-2 absolute bottom-15 bg-yellow-400 px-4 py-2 sm:px-6 sm:py-3 font-bold"
-                    to="/kids">
+                    to="/kids/allshoes">
                     See more
                     <img src={Arrowwhite} className="w-5 h-5" />
                 </NavLink>
