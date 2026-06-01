@@ -79,23 +79,23 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
         <>
             <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-60"
                 onClick={() => setIsFilterOpen(false)}>
-                <aside className="w-115 bg-gray-100 rounded-4xl inline-block py-5 px-8 z-10"
+                <aside className="max-h-[calc(100vh-10%)] max-w-[240px] sm:max-w-none sm:w-115 sm:h-auto bg-gray-100 rounded-4xl inline-block py-3 px-5 sm:py-5 sm:px-8 z-10"
                     onClick={(e) => e.stopPropagation()}>
-                    < div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
-                        <h2 className="text-2xl font-bold text-blue-900">Filters</h2>
+                    < div className="flex justify-around sm:justify-between items-center mb-2 sm:mb-6 pb-1 sm:pb-4 border-b border-gray-200">
+                        <h2 className="text-lg sm:text-2xl font-bold text-blue-900">Filters</h2>
                         <button className="text-sm text-gray-500 hover:text-red-500 transition-colors"
                             onClick={handleClearAll}>Clear All</button>
                     </div>
 
                     <div>
-                        <div className="flex justify-between items-start gap-10 pb-6">
+                        <div className="flex flex-col sm:flex-row justify-between items-center gap-2 pb-2 sm:gap-10 sm:pb-6">
                             {/* --- Бренд --- */}
                             <div className="w-full">
                                 <button
                                     onClick={() => setIsBrandOpen(!isBrandOpen)}
-                                    className="w-full flex justify-between items-center text-lg text-black mb-4"
+                                    className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-2 sm:mb-4 gap-2 sm:gap-0"
                                 >
-                                    <p className="text-lg text-gray-800">Brand</p>
+                                    <p className=" text-base sm:text-lg text-gray-800">Brand</p>
                                     <span className={`transform transition-transform duration-500 ${isBrandOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
                                         <img src={ArrowBlack} alt="arrow" className="w-4 h-4" />
                                     </span>
@@ -123,9 +123,9 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                             <div className="w-full">
                                 <button
                                     onClick={() => setIsCategoryOpen(!isCategoryOpen)}
-                                    className="w-full flex justify-between items-center text-lg text-black mb-4"
+                                    className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-2 sm:mb-4 gap-2 sm:gap-0"
                                 >
-                                    <p className="text-lg text-gray-800">Category</p>
+                                    <p className="text-base sm:text-lg text-gray-800">Category</p>
                                     <span className={`transform transition-transform duration-500 ${isCategoryOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
                                         <img src={ArrowBlack} alt="arrow" className="w-4 h-4" />
                                     </span>
@@ -152,12 +152,12 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
 
 
                         {/* --- Колір (Кастомні кружечки) --- */}
-                        <div className="pb-6">
+                        <div className="pb-0 sm:pb-6">
                             <button
                                 onClick={() => setIsColorOpen(!isColorOpen)}
-                                className="w-full flex justify-between items-center text-lg text-black mb-4"
+                                className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-0 sm:mb-4 gap-2 sm:gap-0"
                             >
-                                <p className="text-lg text-gray-800">Color</p>
+                                <p className="text-base sm:text-lg text-gray-800">Color</p>
                                 <span className={`transform transition-transform duration-500 ${isColorOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
                                     <img src={ArrowBlack} alt="arrow" className="w-4 h-4" />
                                 </span>
@@ -198,14 +198,14 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                         <div className="">
                             <button
                                 onClick={() => setIsPriceOpen(!isPriceOpen)}
-                                className="w-full flex justify-between items-center text-lg text-black mb-4"
+                                className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-0 sm:mb-4 gap-2 sm:gap-0"
                             >
-                                <p className="text-lg text-gray-800">Price Range</p>
+                                <p className="text-base sm:text-lg text-gray-800">Price Range</p>
                                 <span className={`transform transition-transform duration-500 ${isPriceOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
                                     <img src={ArrowBlack} alt="arrow" className="w-4 h-4" />
                                 </span>
                             </button>
-                            <div className={` transition-all duration-500 ${isPriceOpen ? "max-h-60 opacity-100 py-4 px-2" : "max-h-0 opacity-0"}`}>
+                            <div className={` transition-all duration-500 ${isPriceOpen ? "max-h-60 opacity-100 py-2 sm:py-4 px-2" : "max-h-0 opacity-0"}`}>
                                 <input
                                     type="range"
                                     min="500"
@@ -221,7 +221,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                                 </div>
                             </div>
                         </div>
-                        <button className="w-full bg-blue-900 text-white font-bold py-3 rounded-xl mt-8 hover:bg-blue-800 transition-colors shadow-md shadow-blue-100" onClick={handleApplyFilters}>
+                        <button className="w-full bg-blue-900 text-white font-bold py-3 rounded-xl mt-2 sm:mt-8 hover:bg-blue-800 transition-colors shadow-md shadow-blue-100" onClick={handleApplyFilters}>
                             Apply Filters
                         </button>
                     </div>
