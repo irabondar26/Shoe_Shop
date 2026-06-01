@@ -13,3 +13,10 @@ export interface Product {
   category: string;
   color: string;
 }
+
+export type FilterData = {
+  brands: string[];
+  categories: string[];
+  color: string;
+  maxPrice: number;
+}

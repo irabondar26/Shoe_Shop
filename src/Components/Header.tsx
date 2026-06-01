@@ -56,6 +56,7 @@ export default function Header() {
             if (typeof window !== 'undefined') {
                 if (window.scrollY > lastScrollY && window.scrollY > 100) {
                     setIsVisible(false);
+                    setIsOpenHeader(false)
                 } else {
                     setIsVisible(true);
                 }
@@ -132,7 +133,7 @@ export default function Header() {
                         {/* mobile menu */}
                         {isOpenHeader && activeSubmenu ? (
                             <>
-                                <li onClick={() => setActiveSubmenu(null)} className="text-yellow-400 cursor-pointer font-bold flex justify-start items-center gap-2 ">
+                                <li onClick={() => setActiveSubmenu(null)} className="text-yellow-400 cursor-pointer flex justify-start items-center gap-2 ">
                                     <img src={arrowYellow} alt="arrow" className="w-3 h-3 rotate-180" />
                                     Back
                                 </li>
@@ -196,18 +197,18 @@ export default function Header() {
                         <li><a href=""><img src={Favorite} alt="comunication" /></a></li>
                         <li><a href=""><img src={Bag} alt="comunication" /></a></li>
                     </ul>
-                    <ul className={`${isOpenHeader ? "gap-0" : "gap-4"}flex`}>
+                    <ul className={`${isOpenHeader ? "flex-col" : "flex-row "} gap-4  justify-center items-center flex`}>
                         <li>
                             <Button
                                 text="Sign Up"
                                 active={true}
-                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "text-white bg-blue-900"} px-3 py-1`} />
+                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "text-white bg-blue-900 border-2 border-white hover:border-blue-900 hover:text-blue-900 hover:bg-white transition-colors duration-500"} px-3 py-1`} />
                         </li>
                         <li>
                             <Button
-                                text='Sing In'
-                                active={false}
-                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "text-white bg-blue-900"} px-3 py-1`} />
+                                text='Sign In'
+                                active={true}
+                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "border-2 border-blue-900 bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition-colors duration-500"} px-3 py-1`} />
                         </li>
                     </ul>
                 </nav>

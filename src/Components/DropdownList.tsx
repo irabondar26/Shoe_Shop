@@ -11,6 +11,7 @@ type DropdownProps = {
 export default function Dropdown({ category, data }: DropdownProps) {
     const [visibleCount, setVisibleCount] = useState(8);
     const visibleData = data.slice(0, visibleCount);
+    
 
     const handleLoadMore = () => {
         setVisibleCount((prev) => prev + 4);
@@ -26,6 +27,7 @@ export default function Dropdown({ category, data }: DropdownProps) {
                         className="animate-fadeIn"
                     >
                         <Item
+                            id={el.id}
                             name={el.name}
                             price={el.price}
                             photo={el.photo}
@@ -48,5 +50,5 @@ export default function Dropdown({ category, data }: DropdownProps) {
                 </button>
             }
         </div>)
-        :null;
+        : null;
 }

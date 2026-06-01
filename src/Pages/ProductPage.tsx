@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Dropdown from "../Components/DropdownList";
 import raw from "../data.json";
-import { Product } from "../types/types";
+import { Product, FilterData } from "../types/types";
 import Search from "../Img/Search.svg";
 import Filter from "../Img/filter.svg";
 import FilterPanel from "../Components/FilterPanel";
@@ -25,27 +25,55 @@ export default function ProductPage({ category, audience }: { category: string, 
     const filteredByAudience = data.filter(item => item.audience === audience);
     const [filterData, setFilterData] = useState(filteredByAudience);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
+    const [appliedFilterData, setAppliedFilterData] = useState<FilterData>({
+        brands: [],
+        categories: [],
+        color: "none",
+        maxPrice: 5000
+    });
 
     useEffect(() => {
         setFilterData(data.filter(item => item.audience === audience));
         setSearchText("");
+        setAppliedFilterData({
+            brands: [],
+            categories: [],
+            color: "none",
+            maxPrice: 5000
+        });
     }, [audience, category, data]);
 
 
     const handleSearch = () => {
         if (!searchText.trim()) {
-            setFilterData(data);
+            setFilterData(filteredByAudience);
             return;
         }
 
-        const results = data.filter((item) =>
+        const results = filteredByAudience.filter((item) =>
             [item.name, item.brand, item.model, item.audience].some((field) =>
                 field?.toLowerCase().includes(searchText.toLowerCase())
             )
         );
         setFilterData(results);
-    };
+    }
 
+    const finalFilteredData = filterData.filter((item) => {
+        // Перевірка бренду
+        const matchesBrand = appliedFilterData.brands.length === 0 ||
+            appliedFilterData.brands.includes(item.brand);
+
+        // Перевірка категорії
+        const matchesCategory = appliedFilterData.categories.length === 0 || appliedFilterData.categories.includes(item.category);
+
+        // Перевірка кольору
+        const matchesColor = appliedFilterData.color === "none" || item.color === appliedFilterData.color;
+
+        // Перевірка ціни
+        const matchesPrice = item.price <= appliedFilterData.maxPrice;
+
+        return matchesBrand && matchesCategory && matchesColor && matchesPrice;
+    })
 
     return (
         <>
@@ -68,11 +96,13 @@ export default function ProductPage({ category, audience }: { category: string, 
                     </button>
                 </section>
                 <section className="pt-15">
-                    {category === "allshoes" ? (
+                    {finalFilteredData.length === 0 ? (
+                        <h3 className="mb-14 bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium w-full font-[Pacifico]">
+                            Products not found
+                        </h3>
+                    ) : (category === "allshoes" ? (
                         CATEGORY_ORDER.map(category => {
-                            const categoryData = filterData.filter(item => item.category === category);
-
-                            if (categoryData.length === 0) return null;
+                            const categoryData = finalFilteredData.filter(item => item.category === category);
 
                             return (
                                 <Dropdown
@@ -81,21 +111,20 @@ export default function ProductPage({ category, audience }: { category: string, 
                                     data={categoryData}
                                 />
                             );
-                        })
-                    ) : (
+                        }))
+                     : (
                         filterData.filter(item => item.category === category).length === 0 ? (
-                            <h2 className="mb-14 bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium">No products found</h2>
+                            <div className="pb-14"><h2 className="bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium">No products found</h2></div>
                         ) : (
                             <Dropdown
                                 category={formatCategoryName(category)}
-                                data={filterData.filter(item => item.category === category)}
+                                data={finalFilteredData.filter(item => item.category === category)}
                             />
                         )
-                    )}
+                    ))}
                 </section>
-                {isFilterOpen ?
-                    <FilterPanel setIsFilterOpen={setIsFilterOpen} data={filterData} />
-                    : null}
+                {isFilterOpen && (
+                    <FilterPanel setIsFilterOpen={setIsFilterOpen} data={filteredByAudience} appliedFilterData={appliedFilterData} setAppliedFilterData={setAppliedFilterData} />)}
             </div>
         </>
     );

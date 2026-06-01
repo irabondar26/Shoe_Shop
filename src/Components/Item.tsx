@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import starRate from "../Img/starRate.svg"
-import Button from "./Button"
 
 type ItemProps = {
+    id:number,
     name: string;
     price: number;
     photo: string;
@@ -14,7 +15,7 @@ type ItemProps = {
 
 
 
-export default function Item({ name, price, photo, rating, onSale, newPrice }: ItemProps) {
+export default function Item({ id, name, price, photo, rating, onSale, newPrice }: ItemProps) {
 
     const [active, setActive] = useState(false);
 
@@ -40,11 +41,9 @@ export default function Item({ name, price, photo, rating, onSale, newPrice }: I
                         <p>{rating}/5</p>
                     </div>
                     <div className={`transition-all duration-300 ease-in-out opacity-100 translate-y-0 pointer-events-auto ${active ? "lg:opacity-100 lg:translate-y-0" : "lg:opacity-0 lg:translate-y-2 lg:pointer-events-none"}`}>
-                        <Button
-                            text="Shop Now"
-                            active={true}
-                            customClass="text-white bg-blue-900 px-3 py-1 rounded-full whitespace-nowrap"
-                        />
+                        <NavLink to={`/product/${id}`} className="rounded-full flex items-center justify-center gap-2 text-white bg-blue-900 px-3 py-1 whitespace-nowrap">
+                            Shop Now
+                        </NavLink>
                     </div>
                 </div>
             </div>

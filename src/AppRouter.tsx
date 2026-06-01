@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import MainPage from "./Pages/MainPage";
 import ProductPage from './Pages/ProductPage';
+import ProductDetailsPage from './Pages/ProductDetailsPage';
 
 function ProductPageWrapper() {
   const { audience, category } = useParams<{ audience: string; category: string }>();
@@ -17,6 +18,7 @@ export default function AppRoutes() {
     <Routes>
       <Route index element={<MainPage />} />
       <Route path="/:audience/:category" element={<ProductPageWrapper />} />
+      <Route path="/product/:id" element={<ProductDetailsPage />} />
     </Routes>
   );
 }
