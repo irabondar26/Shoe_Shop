@@ -1,19 +1,12 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import {NavigationItem} from "../types/types"
 import Button from "./Button"
 import Logo from "../Img/logo.svg"
 import Comunication from "../Img/comunication.svg"
 import Favorite from "../Img/favorite.svg"
 import Bag from "../Img/bag.svg"
 import arrowYellow from "../Img/arrowYellow.svg"
-
-
-interface NavigationItem {
-    name: string;
-    id: string;
-    to: string;
-    submenu?: string[];
-}
 
 const getActiveFromPath = (path: string) => {
     if (path.includes("/men")) return "Men";
@@ -115,7 +108,7 @@ export default function Header() {
                 <NavLink to="/">
                     <img src={Logo} alt="logo" className="w-15 md:w-20 lg:w-32" />
                 </NavLink>
-                <button className="flex flex-col justify-center items-center w-10 h-10 bg-blue-900 rounded-xl lg:hidden group relative"
+                <button className="flex flex-col justify-center items-center w-10 h-10 bg-blue-900 rounded-xl lg:hidden group relative cursor-pointer"
                     onClick={() => setIsOpenHeader(!isOpenHeader)}>
                     <span className={`block w-5 h-1 bg-white transition-all duration-500 ease-out rounded-sm 
                         ${isOpenHeader ? 'rotate-45 translate-y-[6px]' : '-translate-y-1'}`}>

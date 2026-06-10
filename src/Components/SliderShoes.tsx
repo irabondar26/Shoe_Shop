@@ -4,13 +4,7 @@ import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import arrowBlue from "../Img/arrowBlue.svg"
 import Item from "./Item";
-import { Product } from "../types/types";
-
-type SliderProps = {
-    title: string;
-    data: Product[];
-}
-
+import { SliderProps } from "../types/types";
 
 export default function SliderShoes({ title, data }: SliderProps) {
 
@@ -25,10 +19,10 @@ export default function SliderShoes({ title, data }: SliderProps) {
             <div className="bg-gray-100 rounded-full py-7 px-10 flex justify-between items-center">
                 <h3 className="text-xl lg:text-3xl text-blue-900 font-medium"><span className="font-[Pacifico]">{newTitle[0]}</span> {newTitle[1]}</h3>
                 <div className="flex gap-6">
-                    <button onClick={() => swiperRef.current?.slidePrev()}>
+                    <button className="cursor-pointer" onClick={() => swiperRef.current?.slidePrev()}>
                         <img src={arrowBlue} alt="prev" className="w-4 sm:w-6 rotate-180" />
                     </button>
-                    <button onClick={() => swiperRef.current?.slideNext()}>
+                    <button className="cursor-pointer" onClick={() => swiperRef.current?.slideNext()}>
                         <img src={arrowBlue} alt="next" className="w-4 sm:w-6" />
                     </button>
                 </div>

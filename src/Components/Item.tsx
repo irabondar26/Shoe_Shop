@@ -1,30 +1,16 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import starRate from "../Img/starRate.svg"
-
-type ItemProps = {
-    id:number,
-    name: string;
-    price: number;
-    photo: string;
-    rating: number;
-    popularity: number,
-    onSale: boolean,
-    newPrice: number
-}
-
-
+import { ItemProps } from "../types/types";
+import ProductRating from "./ProductRating";
 
 export default function Item({ id, name, price, photo, rating, onSale, newPrice }: ItemProps) {
 
-    const [active, setActive] = useState(false);
+    const productImages = Array.isArray(photo) ? photo : [photo];
 
     return (
-        <div className="w-full h-full pt-2.5 pb-4 px-2.5 hover:bg-gray-100 transition-colors duration-500 text-black rounded-2.5 flex flex-col justify-start items-start relative border border-gray-100"
-            onMouseEnter={() => setActive(true)}
-            onMouseLeave={() => setActive(false)}>
+        <NavLink to={`/product/${id}`} className="w-full h-full pt-2.5 pb-4 px-2.5 hover:bg-gray-100 transition-colors duration-500 text-black rounded-2.5 flex flex-col justify-start items-start relative border border-gray-100"
+        >
             <div className="w-full overflow-hidden rounded-2.5 flex-shrink-1">
-                <img src={photo} alt="sneakers" className="w-full h-full object-cover block" />
+                <img src={productImages[0]} alt="sneakers" className="w-full h-full object-cover block" />
             </div>
             {onSale && <p className="px-3 py-1.5 bg-amber-400 rounded-2xl text-sm absolute top-5 right-5 font-bold">Disc {Math.round(100 - ((newPrice * 100) / price))} %</p>}
             <div className="flex flex-col justify-between items-start mt-2.5 w-full flex-grow gap-8">
@@ -35,18 +21,8 @@ export default function Item({ id, name, price, photo, rating, onSale, newPrice 
                         <p className="text-red-600 font-bold text-xl">{newPrice} Kč</p>
                     </div>
                     : <p>{price} Kč</p>}
-                <div className="w-full pr-4 flex flex-wrap justify-between items-end gap-y-3">
-                    <div className="flex gap-2 items-end pr-4">
-                        <img src={starRate} alt="arrow" className="w-7" />
-                        <p>{rating}/5</p>
-                    </div>
-                    <div className={`transition-all duration-300 ease-in-out opacity-100 translate-y-0 pointer-events-auto ${active ? "lg:opacity-100 lg:translate-y-0" : "lg:opacity-0 lg:translate-y-2 lg:pointer-events-none"}`}>
-                        <NavLink to={`/product/${id}`} className="rounded-full flex items-center justify-center gap-2 text-white bg-blue-900 px-3 py-1 whitespace-nowrap">
-                            Shop Now
-                        </NavLink>
-                    </div>
-                </div>
+                <ProductRating rating={rating} />
             </div>
-        </div>
+        </NavLink>
     )
 }

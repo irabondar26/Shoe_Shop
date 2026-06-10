@@ -9,7 +9,7 @@ export default function Footer() {
             <section className="bg-blue-800 px-10 py-10 md:py-20 sm:px-20 lg:px-30 xl:px-40">
                 <div className="flex flex-col justify-between gap-y-5 items-center mb-5 sm:flex-row sm:gap-0">
                     <h2 className="font-[Pacifico] text-3xl text-white">vantela</h2>
-                    <button className="bg-gray-100 text-gray-500 w-full sm:w-90 rounded-full flex justify-between items-center py-5 px-7 gap-x-3">
+                    <button className="bg-gray-100 text-gray-500 w-full sm:w-90 rounded-full flex justify-between items-center py-5 px-7 gap-x-3 cursor-pointer">
                         <p>Subscribe to our newsletter ...</p>
                         <img src={ArrowBlue} alt="ArrowBlue" className="h-4" />
                     </button>

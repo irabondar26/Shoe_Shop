@@ -1,14 +1,6 @@
 import { useState } from "react";
 import ArrowBlack from "../Img/arrowBlack.svg";
-import { Product, FilterData } from "../types/types";
-
-type FilterProps = {
-    setIsFilterOpen: (value: boolean) => void;
-    setAppliedFilterData: (value: FilterData) => void;
-    data: Product[];
-    appliedFilterData: FilterData;
-}
-
+import {FilterProps } from "../types/types";
 
 export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data, appliedFilterData }: FilterProps) {
     // Стани для відкриття/закриття аккордеонів
@@ -83,7 +75,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                     onClick={(e) => e.stopPropagation()}>
                     < div className="flex justify-around sm:justify-between items-center mb-2 sm:mb-6 pb-1 sm:pb-4 border-b border-gray-200">
                         <h2 className="text-lg sm:text-2xl font-bold text-blue-900">Filters</h2>
-                        <button className="text-sm text-gray-500 hover:text-red-500 transition-colors"
+                        <button className="text-sm text-gray-500 hover:text-red-500 transition-colors cursor-pointer"
                             onClick={handleClearAll}>Clear All</button>
                     </div>
 
@@ -93,7 +85,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                             <div className="w-full">
                                 <button
                                     onClick={() => setIsBrandOpen(!isBrandOpen)}
-                                    className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-2 sm:mb-4 gap-2 sm:gap-0"
+                                    className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-2 sm:mb-4 gap-2 sm:gap-0 cursor-pointer"
                                 >
                                     <p className=" text-base sm:text-lg text-gray-800">Brand</p>
                                     <span className={`transform transition-transform duration-500 ${isBrandOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
@@ -123,7 +115,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                             <div className="w-full">
                                 <button
                                     onClick={() => setIsCategoryOpen(!isCategoryOpen)}
-                                    className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-2 sm:mb-4 gap-2 sm:gap-0"
+                                    className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-2 sm:mb-4 gap-2 sm:gap-0 cursor-pointer"
                                 >
                                     <p className="text-base sm:text-lg text-gray-800">Category</p>
                                     <span className={`transform transition-transform duration-500 ${isCategoryOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
@@ -155,7 +147,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                         <div className="pb-0 sm:pb-6">
                             <button
                                 onClick={() => setIsColorOpen(!isColorOpen)}
-                                className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-0 sm:mb-4 gap-2 sm:gap-0"
+                                className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-0 sm:mb-4 gap-2 sm:gap-0 cursor-pointer"
                             >
                                 <p className="text-base sm:text-lg text-gray-800">Color</p>
                                 <span className={`transform transition-transform duration-500 ${isColorOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
@@ -173,7 +165,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                                                 key={color.name}
                                                 onClick={() => setSelectedColor(color.name)}
                                                 title={color.name}
-                                                className={`w-8 h-8 rounded-full transition-all duration-500 relative hover:scale-110
+                                                className={`w-8 h-8 rounded-full transition-all duration-500 relative hover:scale-110 cursor-pointer
                                                 ${isSelected
                                                         ? "ring-2 ring-blue-900 ring-offset-2 scale-110"
                                                         : "ring-0 ring-offset-0"}`}
@@ -198,7 +190,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                         <div className="">
                             <button
                                 onClick={() => setIsPriceOpen(!isPriceOpen)}
-                                className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-0 sm:mb-4 gap-2 sm:gap-0"
+                                className="w-full flex justify-start sm:justify-between items-center text-lg text-black mb-0 sm:mb-4 gap-2 sm:gap-0 cursor-pointer"
                             >
                                 <p className="text-base sm:text-lg text-gray-800">Price Range</p>
                                 <span className={`transform transition-transform duration-500 ${isPriceOpen ? "rotate-90" : "rotate-[-90deg]"}`}>
@@ -221,7 +213,7 @@ export default function FilterPanel({ setIsFilterOpen,setAppliedFilterData, data
                                 </div>
                             </div>
                         </div>
-                        <button className="w-full bg-blue-900 text-white font-bold py-3 rounded-xl mt-2 sm:mt-8 hover:bg-blue-800 transition-colors shadow-md shadow-blue-100" onClick={handleApplyFilters}>
+                        <button className="w-full bg-blue-900 text-white font-bold py-3 rounded-xl mt-2 sm:mt-8 hover:bg-blue-800 transition-colors shadow-md shadow-blue-100 cursor-pointer" onClick={handleApplyFilters}>
                             Apply Filters
                         </button>
                     </div>
