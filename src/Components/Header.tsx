@@ -104,7 +104,7 @@ export default function Header() {
                     <li><a>Store</a></li>
                 </ul>
             </section>
-            <header className={`px-10 py-6 flex justify-between items-center sm:px-20 lg:px-30 xl:px-40`}>
+            <header className={`px-10 py-6 flex justify-between items-center sm:px-20 lg:px-30 xl:px-40 lg:gap-15`}>
                 <NavLink to="/">
                     <img src={Logo} alt="logo" className="w-15 md:w-20 lg:w-32" />
                 </NavLink>
@@ -120,8 +120,8 @@ export default function Header() {
                         ${isOpenHeader ? '-rotate-45 -translate-y-[6px]' : 'translate-y-1'}`}>
                     </span>
                 </button>
-                <nav className={`${isOpenHeader ? 'flex flex-col items-start bg-blue-900 absolute top-34 right-10 sm:right-20 z-10 rounded-xl py-4 px-8' : 'hidden'}  gap-10 items-center lg:flex`}>
-                    <ul className={`flex ${isOpenHeader ? 'flex-col w-full items-start' : 'flex-row'} gap-7 text-sm`}>
+                <nav className={`${isOpenHeader ? 'flex flex-col items-start bg-blue-900 absolute top-34 right-10 sm:right-20 z-10 rounded-xl py-4 px-8' : 'hidden'} gap-5 lg:gap-7 xl:gap-10 items-center lg:flex`}>
+                    <ul className={`flex ${isOpenHeader ? 'flex-col w-full items-start' : 'flex-row'} gap-7 lg:gap-4 xl:gap-7 text-sm`}>
 
                         {/* mobile menu */}
                         {isOpenHeader && activeSubmenu ? (
@@ -185,7 +185,7 @@ export default function Header() {
                             ))
                         )}
                     </ul>
-                    <ul className={`${isOpenHeader ? "hidden" : "flex"} gap-5`}>
+                    <ul className={`${isOpenHeader ? "hidden" : "flex"} gap-3`}>
                         <li><a href=""><img src={Comunication} alt="comunication" /></a></li>
                         <li><a href=""><img src={Favorite} alt="comunication" /></a></li>
                         <li><a href=""><img src={Bag} alt="comunication" /></a></li>

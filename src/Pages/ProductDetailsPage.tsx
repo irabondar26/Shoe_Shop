@@ -172,7 +172,7 @@ export default function ProductDetailsPage() {
                     <div className="flex flex-col justify-start items-start mb-5 sm:mb-6">
                         <p className="text-base mb-2">Select a size</p>
                         <p className={`${isSelectedSize ? "" : "hidden"} text-xl font-bold text-red-600 mb-4`}>Please, select a size!</p>
-                        <div className="flex justify-start items-center gap-1.5">
+                        <div className="flex justify-start items-center gap-1 sm:gap-1.5">
                             {product.sizes.map(el =>
                                 <button key={el.value} className={`${el.isAvailable
                                     ? "text-black border-black cursor-pointer"
@@ -189,7 +189,7 @@ export default function ProductDetailsPage() {
                         </div>
                     </div>
                     <div className="w-full flex justify-between items-center gap-2">
-                        <Button text="+ Add to cart" active={true} customClass="w-full border border-2 border-blue-900 text-blue-900 font-bold py-2 sm:py-4 px-4 sm:px-8"
+                        <Button text="+ Add to cart" active={true} customClass="w-full border border-2 border-blue-900 text-blue-900 font-bold  [@media(max-width:380px)]:text-xs py-2 sm:py-4 px-4 sm:px-8"
                             onClick={() => {
                                 if (!selectedSize) {
                                     setIsSelectedSize(true);
@@ -197,7 +197,7 @@ export default function ProductDetailsPage() {
                                     setIsSelectedSize(false);
                                 }
                             }} />
-                        <Button text="Buy now" active={true} customClass="w-full bg-blue-900 text-white font-bold py-2 sm:py-4 px-4 sm:px-8"
+                        <Button text="Buy now" active={true} customClass="w-full bg-blue-900 text-white font-bold  [@media(max-width:380px)]:text-xs py-2 sm:py-4 px-4 sm:px-8"
                             onClick={() => {
                                 if (!selectedSize) {
                                     setIsSelectedSize(true);
@@ -221,29 +221,39 @@ export default function ProductDetailsPage() {
                         Similar products</button>
                 </div>
                 <div key={actibeTab} className="w-full px-5 sm:px-10">
-                    {actibeTab === "details" ?
-                        <ul className="w-full grid grid-flow-row grid-cols-1 sm:grid-cols-2 justify-start items-start gap-y-2 sm:gap-3 md:gap-6 animate-fadeIn">
+                    {actibeTab === "details" && (product.addInfo?
+                        (<ul className="w-full grid grid-flow-row grid-cols-1 sm:grid-cols-2 justify-start items-start gap-y-2 sm:gap-3 md:gap-6 animate-fadeIn">
                             {product.addInfo?.map((det, i) =>
                                 <li key={i} className="justify-self-start flex items-start gap-3 text-gray-700 text-base text-start">
                                     <span className="w-1.5 h-1.5 bg-blue-900 rounded-full mt-2 shrink-0"></span>
                                     {det}</li>
                             )}
-                        </ul>
-                        : actibeTab === "review" ?
-                            <ul className="grid grid-cols-1 xl:grid-cols-2 auto-rows-fr gap-y-8 xl:gap-x-10 gap- xl:gap-y-15 animate-fadeIn">
-                                {product.reviews?.map((rev, i) =>
-                                    <li key={i} className="flex flex-col sm:flex-row items-start justify-between gap-4 sm:gap-8 border-b-2 border-b-gray-300 pb-5 sm:px-5 sm:py-3">
-                                        <ProductRating rating={rev.userRating} />
-                                        <div className="text-start">
-                                            <div className="flex items-start justify-between mb-2">
-                                                <h4 className="font-bold">{rev.userName}</h4>
-                                                <p>{formatDate(rev.date)}</p>
-                                            </div>
-                                            <p>{rev.comment}</p>
+                        </ul>)
+                        : (<h3 className="bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium w-full font-[Pacifico]">
+                            No information
+                        </h3>))}
+                    {actibeTab === "review" && (product.reviews ?
+                        (<ul className="grid grid-cols-1 xl:grid-cols-2 auto-rows-fr gap-y-8 xl:gap-x-10 gap- xl:gap-y-15 animate-fadeIn">
+                            {product.reviews?.map((rev, i) =>
+                                <li key={i} className="flex flex-col sm:flex-row items-start justify-between gap-4 sm:gap-8 border-b-2 border-b-gray-300 pb-5 sm:px-5 sm:py-3">
+                                    <ProductRating rating={rev.userRating} />
+                                    <div className="text-start">
+                                        <div className="flex items-start justify-between mb-2">
+                                            <h4 className="font-bold">{rev.userName}</h4>
+                                            <p>{formatDate(rev.date)}</p>
                                         </div>
-                                    </li>)}
-                            </ul>
-                            : <Dropdown data={similarProducts} />}
+                                        <p>{rev.comment}</p>
+                                    </div>
+                                </li>)}
+                        </ul>)
+                        : (<h3 className="bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium w-full font-[Pacifico]">
+                            No reviews
+                        </h3>))}
+                    {actibeTab === "similar" && (similarProducts.length !== 0 ?
+                        (<Dropdown data={similarProducts} />)
+                        : (<h3 className="bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium w-full font-[Pacifico]">
+                            Not found similar products
+                        </h3>))}
                 </div>
             </section >
         </div >
