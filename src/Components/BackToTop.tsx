@@ -29,7 +29,7 @@ export default function BackToTop() {
                 text=""
                 active={true}
                 onClick={handleScrollUp}
-                customClass="w-12 h-12 bg-blue-900 shadow-2xl hover:bg-yellow-400 transition-colors duration-500"
+                customClass="w-12 h-12 bg-blue-900 shadow-2xl hover:bg-yellow-400 transition-colors duration-500 rounded-full"
                 addContent={
                     <img src={ArrowWhite} alt="arrow" className="rotate-270 w-5 h-5" />
                 }

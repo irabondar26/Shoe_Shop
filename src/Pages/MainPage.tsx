@@ -9,7 +9,7 @@ import Arrowwhite from "../Img/arrowWhite.svg";
 
 function MainPage() {
 
-    const data = raw as Product[];
+    const data = raw.shoes as Product[];
 
     const mostPopular: Product[] = data.filter((item) => item.popularity >= 5);
     const onSale: Product[] = data.filter((item) => item.onSale === true);
@@ -21,7 +21,7 @@ function MainPage() {
                     <h1 className="font-[Pacifico] text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl text-blue-900">vantela</h1>
                     <h2 className="hidden sm:block text-yellow-400 text-base md:text-lg lg:text-2xl xl:text-3xl font-bold">PUBLIC HIGH<span className="font-light"> GUM NATURAL</span></h2>
                     <p className="text-xs text-stone-700 text-start hidden md:block md:w-[39%] lg:w-xs xl:w-sm 2xl:w-md ">It was popularised in the 1960s with the release of Letraset sheets containing. Lorem Ipsum passages, and more recently with desktop publishing</p>
-                    <Button text='Shop Now' active={true} customClass="text-white bg-blue-900 px-4 py-2 sm:px-6 sm:py-3" />
+                    <Button text='Shop Now' active={true} customClass="text-white bg-blue-900 px-4 py-2 sm:px-6 sm:py-3 rounded-full" />
                 </article>
             </section>
             <SliderShoes title="Most Popular" data={mostPopular} />

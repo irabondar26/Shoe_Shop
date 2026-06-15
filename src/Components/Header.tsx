@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import {NavigationItem} from "../types/types"
+import { useAppSelector } from "../redux-toolkit/hooks";
+import { NavigationItem } from "../types/types"
 import Button from "./Button"
 import Logo from "../Img/logo.svg"
-import Comunication from "../Img/comunication.svg"
-import Favorite from "../Img/favorite.svg"
-import Bag from "../Img/bag.svg"
+import FavoriteBlue from "../Img/favoriteBlue.svg"
+import BagBlue from "../Img/bagBlue.svg"
+import FavoriteWhite from "../Img/favoriteWhite.svg"
+import BagWhite from "../Img/bagWhite.svg"
 import arrowYellow from "../Img/arrowYellow.svg"
 
 const getActiveFromPath = (path: string) => {
@@ -18,6 +20,8 @@ const getActiveFromPath = (path: string) => {
 
 export default function Header() {
     const location = useLocation();
+
+    const countItemsCart = useAppSelector((state) => state.cart.items.length);
 
     const [activeButton, setActiveButton] = useState<string>(() => getActiveFromPath(location.pathname));
     const [isOpenHeader, setIsOpenHeader] = useState(false);
@@ -185,23 +189,38 @@ export default function Header() {
                             ))
                         )}
                     </ul>
-                    <ul className={`${isOpenHeader ? "hidden" : "flex"} gap-3`}>
-                        <li><a href=""><img src={Comunication} alt="comunication" /></a></li>
-                        <li><a href=""><img src={Favorite} alt="comunication" /></a></li>
-                        <li><a href=""><img src={Bag} alt="comunication" /></a></li>
+                    {/* ${isOpenHeader ? "hidden" : "flex"} */}
+                    <ul className={`flex gap-3`}>
+                        <li><NavLink to="/cart">
+                            {isOpenHeader ?
+                                <img src={FavoriteWhite} alt="Heart" />
+                                :
+                                <img src={FavoriteBlue} alt="Heart" />}
+                        </NavLink></li>
+                        <li className="relative">
+                            <NavLink to="/cart">
+                                {isOpenHeader ?
+                                    <img src={BagWhite} alt="Bag" />
+                                    :
+                                    <img src={BagBlue} alt="Bag" />}
+                                {countItemsCart !== 0 ?
+                                    <span className="bg-yellow-400 w-4 h-4 text-white text-xs font-semibold block rounded-full absolute -top-1 -right-1 ">{countItemsCart}</span>
+                                    : null}
+                            </NavLink>
+                        </li>
                     </ul>
                     <ul className={`${isOpenHeader ? "flex-col" : "flex-row "} gap-4  justify-center items-center flex`}>
                         <li>
                             <Button
                                 text="Sign Up"
                                 active={true}
-                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "text-white bg-blue-900 border-2 border-white hover:border-blue-900 hover:text-blue-900 hover:bg-white transition-colors duration-500"} px-3 py-1`} />
+                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "text-white bg-blue-900 border-2 border-white hover:border-blue-900 hover:text-blue-900 hover:bg-white transition-colors duration-500"} px-3 py-1 rounded-full`} />
                         </li>
                         <li>
                             <Button
                                 text='Sign In'
                                 active={true}
-                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "border-2 border-blue-900 bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition-colors duration-500"} px-3 py-1`} />
+                                customClass={`${isOpenHeader ? "text-blue-900 bg-white" : "border-2 border-blue-900 bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition-colors duration-500"} px-3 py-1 rounded-full`} />
                         </li>
                     </ul>
                 </nav>

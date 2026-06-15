@@ -13,8 +13,8 @@ export interface Product {
   category: string;
   color: string;
   sizes: ProductSize[];
-  addInfo?:string[];
-  reviews?:Review[];
+  addInfo?: string[];
+  reviews?: Review[];
 }
 
 interface ProductSize {
@@ -23,11 +23,11 @@ interface ProductSize {
 }
 
 interface Review {
-  id:number,
-  userName:string,
-  userRating:number,
-  comment:string,
-  date:string
+  id: number,
+  userName: string,
+  userRating: number,
+  comment: string,
+  date: string
 }
 
 export interface NavigationItem {
@@ -81,5 +81,14 @@ export type SliderProps = {
 }
 
 export interface ProductRatingProps {
-  rating:number;
+  rating: number;
+}
+
+interface CartItem extends Product {
+  selectedSize: number;
+  quantity: number;
+}
+
+ export interface CartState {
+  items: CartItem[];
 }

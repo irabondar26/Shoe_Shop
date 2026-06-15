@@ -1,1230 +1,1254 @@
-[
-    {
-        "id": 1,
-        "name": "Boty Superstar II",
-        "brand": "adidas",
-        "model": "Superstar",
-        "price": 2799,
-        "photo": [
-            "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/1a6c516af64c4832829354533392a713_9366/Boty_Superstar_II_cerna_JI0079_01_standard.jpg",
-            "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7c1cfa6f04944bf18a2d1faee1e4762b_9366/Boty_Superstar_II_cerna_JI0079_02_standard_hover.jpg",
-            "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e696998c43e3451c96af7c2d700901f6_9366/Boty_Superstar_II_cerna_JI0079_04_standard.jpg",
-            "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/285a6d307c404a48835e447a6daaa66c_9366/Boty_Superstar_II_cerna_JI0079_09_standard.jpg"
-        ],
-        "rating": 4.66,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "black",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ],
-        "addInfo": [
-            "Standard size",
-            "Lacing",
-            "Leather upper",
-            "Padded tongue",
-            "Textile lining",
-            "Rubber sole",
-            "Color code: Core Black / Cloud White / Core Black",
-            "Product code: JI0079"
-        ],
-        "reviews": [
-            {
-                "id": "1",
-                "userName": "Olena",
-                "userRating": 5,
-                "date": "2026-05-12",
-                "comment": "The shoes are just great! Very comfortable, the size fit perfectly. Fast delivery."
-            },
-            {
-                "id": "2",
-                "userName": "Mike",
-                "userRating": 4,
-                "date": "2026-05-28",
-                "comment": "The sneakers are cool, but a little wide for a narrow foot. Top quality!"
-            },
-            {
-                "id": "3",
-                "userName": "Sidni",
-                "userRating": 5,
-                "date": "2026-06-09",
-                "comment": "The shoes are just great! Very comfortable, the size fit perfectly. Fast delivery."
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Boty Superstar II",
-        "brand": "adidas",
-        "model": "Superstar",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a9c4cf63ca634c26a911dc5b21e5c377_9366/Boty_Superstar_II_seda_JQ3222_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 4,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "gray",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Boty Handball Spezial",
-        "brand": "adidas",
-        "model": "Spezial",
-        "price": 2699,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/c60e289b0cfc47d9b9745104ddb355f6_9366/Boty_Handball_Spezial_hneda_JQ8411_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "brown",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Boty Sambae",
-        "brand": "adidas",
-        "model": "Sambae",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/51fa97b24eb5404b809c29a39a87fca4_9366/Boty_Samba_bila_JI1349_01_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 1959,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "white",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Obuv OZWEEGO",
-        "brand": "adidas",
-        "model": "OZWEEGO",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/86dbbccdb3db4f5f846eaa7600ee8b42_9366/Obuv_OZWEEGO_cerna_EE6999_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 4,
-        "onSale": true,
-        "newPrice": 1763,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "black",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Boty Campus 00s",
-        "brand": "adidas",
-        "model": "Campus",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9b41c1693e254b828d98bc61a9a619c3_9366/Boty_Campus_00s_Purpurova_JQ8349_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 1959,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "red",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "name": "Boty Adizero Boston 12",
-        "brand": "adidas",
-        "model": "Adizero",
-        "price": 3899,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/13786967a336486e930f4486111701f1_9366/Boty_Adizero_Boston_12_modra_JI4477_HM1.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 2535,
-        "audience": "men",
-        "category": "running",
-        "color": "black",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "name": "Tréninková obuv Dropset 3",
-        "brand": "adidas",
-        "model": "Dropset",
-        "price": 2999,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/3ce6dc386217438ead9ee247baa978e2_9366/Treninkova_obuv_Dropset_3_cerna_IG3861_HM1.jpg",
-        "rating": 0,
-        "popularity": 4,
-        "onSale": true,
-        "newPrice": 2249,
-        "audience": "men",
-        "category": "running",
-        "color": "black",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "name": "Boty Campus 00s",
-        "brand": "adidas",
-        "model": "Campus",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1dc2d071ab5483bb1ece0ec7a7bd574_9366/Boty_Campus_00s_bila_ID1435_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 2099,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "beige",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "name": "Pantofle Adilette 22",
-        "brand": "adidas",
-        "model": "Pantofle",
-        "price": 1599,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0f8ccddbc11845d5bf81afc700fc6d35_9366/Pantofle_Adilette_22_seda_HP6522_HM1.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "men",
-        "category": "sandals",
-        "color": "black",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "name": "Boty Campus 00s",
-        "brand": "adidas",
-        "model": "Campus",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/48e784d28ae44c6189fdc008cf99a8f8_9366/Boty_Campus_00s_modra_JR8163_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 4,
-        "onSale": true,
-        "newPrice": 2099,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "blue",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "name": "Shadow Fever Shoes",
-        "brand": "adidas",
-        "model": "Shadow",
-        "price": 2999,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9d1cd84c1f42405a9af485967d15e1b3_9366/Shadow_Fever_Shoes_bezova_JR8214_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 1949,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "beige",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 13,
-        "name": "Boty Gazelle Indoor",
-        "brand": "adidas",
-        "model": "Gazelle",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e5db3307cf524ed29c4bd298b2ed499e_9366/Boty_Gazelle_Indoor_Purpurova_JI0324_01_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 2239,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "red",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 14,
-        "name": "Boty Forum Low CL",
-        "brand": "adidas",
-        "model": "Forum",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e2577a3fc9742cb8a684573e24abe94_9366/Boty_Forum_Low_CL_bila_JQ0206_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 4,
-        "onSale": true,
-        "newPrice": 1819,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "white",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 15,
-        "name": "Boty Treziod 2.0",
-        "brand": "adidas",
-        "model": "Treziod",
-        "price": 1899,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/6b13d112cf01454e95367ab9800107a0_9366/Boty_Treziod_2.0_seda_IH3802_01_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 1425,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "white",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 16,
-        "name": "Boty Stabil 16 Indoor",
-        "brand": "adidas",
-        "model": "Stabil",
-        "price": 3899,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/00908943d7574d16b9febebdd2132f18_9366/Boty_Stabil_16_Indoor_bila_JP5770_01_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 2729,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "white",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 17,
-        "name": "Boty Adizero EVO SL",
-        "brand": "adidas",
-        "model": "Adizero",
-        "price": 3599,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/d43823e6f341472896ef52cc49d11177_9366/Boty_Adizero_EVO_SL_hneda_JS4446_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "women",
-        "category": "running",
-        "color": "brown",
-        "sizes": [
-            {
-                "value": 35,
-                "isAvailable": true
-            },
-            {
-                "value": 36,
-                "isAvailable": false
-            },
-            {
-                "value": 37,
-                "isAvailable": true
-            },
-            {
-                "value": 38,
-                "isAvailable": true
-            },
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": true
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 18,
-        "name": "Boty Handball Spezial",
-        "brand": "adidas",
-        "model": "Handball",
-        "price": 2799,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/590ba6dd3ec942b382dc721f678f71eb_9366/Boty_Handball_Spezial_bezova_JR4881_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "women",
-        "category": "lifestile",
-        "color": "beige",
-        "sizes": [
-            {
-                "value": 35,
-                "isAvailable": true
-            },
-            {
-                "value": 36,
-                "isAvailable": false
-            },
-            {
-                "value": 37,
-                "isAvailable": true
-            },
-            {
-                "value": 38,
-                "isAvailable": true
-            },
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": true
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 19,
-        "name": "Boty Superstar II",
-        "brand": "adidas",
-        "model": "Superstar",
-        "price": 2999,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/04911f45c7884c759fc73ab6ee0ee9f5_9366/Boty_Superstar_II_cerna_JH9475_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 3,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "women",
-        "category": "lifestile",
-        "color": "black",
-        "sizes": [
-            {
-                "value": 35,
-                "isAvailable": true
-            },
-            {
-                "value": 36,
-                "isAvailable": false
-            },
-            {
-                "value": 37,
-                "isAvailable": true
-            },
-            {
-                "value": 38,
-                "isAvailable": true
-            },
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": true
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 20,
-        "name": "Boty Tensaur Run 2.0 Kids",
-        "brand": "adidas",
-        "model": "Tensaur",
-        "price": 899,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7105cafb033141ff96434cc250674626_9366/Boty_Tensaur_Run_2.0_Kids_ruzova_IE5990_01_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "kids",
-        "category": "running",
-        "color": "pink",
-        "sizes": [
-            {
-                "value": 28,
-                "isAvailable": true
-            },
-            {
-                "value": 29,
-                "isAvailable": false
-            },
-            {
-                "value": 30,
-                "isAvailable": true
-            },
-            {
-                "value": 31,
-                "isAvailable": true
-            },
-            {
-                "value": 32,
-                "isAvailable": true
-            },
-            {
-                "value": 33,
-                "isAvailable": true
-            },
-            {
-                "value": 34,
-                "isAvailable": true
-            },
-            {
-                "value": 35,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 21,
-        "name": "Dětské boty Barreda Decode",
-        "brand": "adidas",
-        "model": "Barreda",
-        "price": 1299,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a954419a27543c3913bd02753461dfd_9366/Detske_boty_Barreda_Decode_modra_JR0757_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 844,
-        "audience": "kids",
-        "category": "lifestile",
-        "color": "blue",
-        "sizes": [
-            {
-                "value": 28,
-                "isAvailable": true
-            },
-            {
-                "value": 29,
-                "isAvailable": false
-            },
-            {
-                "value": 30,
-                "isAvailable": true
-            },
-            {
-                "value": 31,
-                "isAvailable": true
-            },
-            {
-                "value": 32,
-                "isAvailable": true
-            },
-            {
-                "value": 33,
-                "isAvailable": true
-            },
-            {
-                "value": 34,
-                "isAvailable": true
-            },
-            {
-                "value": 35,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 22,
-        "name": "Boty VL Court Bold Lifestyle Kids",
-        "brand": "adidas",
-        "model": "Court",
-        "price": 1599,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/3fd0cd267b0d4e06a544516cf2cd3412_9366/Boty_VL_Court_Bold_Lifestyle_Kids_oranzova_JI1019_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 1199,
-        "audience": "kids",
-        "category": "lifestile",
-        "color": "beige",
-        "sizes": [
-            {
-                "value": 28,
-                "isAvailable": true
-            },
-            {
-                "value": 29,
-                "isAvailable": false
-            },
-            {
-                "value": 30,
-                "isAvailable": true
-            },
-            {
-                "value": 31,
-                "isAvailable": true
-            },
-            {
-                "value": 32,
-                "isAvailable": true
-            },
-            {
-                "value": 33,
-                "isAvailable": true
-            },
-            {
-                "value": 34,
-                "isAvailable": true
-            },
-            {
-                "value": 35,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 23,
-        "name": "Dětské boty adidas Disney Jasmine Grand Court 2.0",
-        "brand": "adidas",
-        "model": "Disney",
-        "price": 1099,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/6e0c917e4b064e3bae566935bc555348_9366/Detske_boty_adidas_Disney_Jasmine_Grand_Court_2.0_zelena_JR4919_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": true,
-        "newPrice": 749,
-        "audience": "kids",
-        "category": "lifestile",
-        "color": "blue",
-        "sizes": [
-            {
-                "value": 28,
-                "isAvailable": true
-            },
-            {
-                "value": 29,
-                "isAvailable": false
-            },
-            {
-                "value": 30,
-                "isAvailable": true
-            },
-            {
-                "value": 31,
-                "isAvailable": true
-            },
-            {
-                "value": 32,
-                "isAvailable": true
-            },
-            {
-                "value": 33,
-                "isAvailable": true
-            },
-            {
-                "value": 34,
-                "isAvailable": true
-            },
-            {
-                "value": 35,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 24,
-        "name": "Dětské boty Superstar Winter Trek",
-        "brand": "adidas",
-        "model": "Superstar",
-        "price": 2199,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/08972736d6d0486f87809276e1f1ca67_9366/Detske_boty_Superstar_Winter_Trek_hneda_JQ0343_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "kids",
-        "category": "lifestile",
-        "color": "brown",
-        "sizes": [
-            {
-                "value": 28,
-                "isAvailable": true
-            },
-            {
-                "value": 29,
-                "isAvailable": false
-            },
-            {
-                "value": 30,
-                "isAvailable": true
-            },
-            {
-                "value": 31,
-                "isAvailable": true
-            },
-            {
-                "value": 32,
-                "isAvailable": true
-            },
-            {
-                "value": 33,
-                "isAvailable": true
-            },
-            {
-                "value": 34,
-                "isAvailable": true
-            },
-            {
-                "value": 35,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 25,
-        "name": "Jabbar Hi Shoes",
-        "brand": "adidas",
-        "model": "Jabbar",
-        "price": 2999,
-        "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5baba7ece3e34b82b87aeb0d27d25118_9366/Jabbar_Hi_Shoes_bila_JS0799_01_00_standard.jpg",
-        "rating": 0,
-        "popularity": 3,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "women",
-        "category": "lifestile",
-        "color": "beige",
-        "sizes": [
-            {
-                "value": 35,
-                "isAvailable": true
-            },
-            {
-                "value": 36,
-                "isAvailable": false
-            },
-            {
-                "value": 37,
-                "isAvailable": true
-            },
-            {
-                "value": 38,
-                "isAvailable": true
-            },
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": true
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            }
-        ]
-    },
-    {
-        "id": 26,
-        "name": "New Balance U204L",
-        "brand": "New Balance",
-        "model": "U204L",
-        "price": 3299,
-        "photo": "https://newbalance.cz/picture/fit-in/1000x1000/smart/filters:fill(white):quality(75)/858980af06a4ba8c007346ef5c378763.png",
-        "rating": 0,
-        "popularity": 5,
-        "onSale": false,
-        "newPrice": 0,
-        "audience": "men",
-        "category": "lifestile",
-        "color": "beige",
-        "sizes": [
-            {
-                "value": 39,
-                "isAvailable": true
-            },
-            {
-                "value": 40,
-                "isAvailable": false
-            },
-            {
-                "value": 41,
-                "isAvailable": true
-            },
-            {
-                "value": 42,
-                "isAvailable": true
-            },
-            {
-                "value": 43,
-                "isAvailable": true
-            },
-            {
-                "value": 44,
-                "isAvailable": true
-            },
-            {
-                "value": 45,
-                "isAvailable": true
-            }
-        ]
-    }
-]
+{
+    "promoCodes": [
+        {
+            "code": "SAVE10",
+            "discountPercent": 10,
+            "isActive": true
+        },
+        {
+            "code": "IRYNITY",
+            "discountPercent": 20,
+            "isActive": true
+        },
+        {
+            "code": "SHOE50",
+            "discountPercent": 50,
+            "isActive": true
+        },
+        {
+            "code": "EXPIRED15",
+            "discountPercent": 15,
+            "isActive": false
+        }
+    ],
+    "shoes": [
+        {
+            "id": 1,
+            "name": "Boty Superstar II",
+            "brand": "adidas",
+            "model": "Superstar",
+            "price": 2799,
+            "photo": [
+                "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/1a6c516af64c4832829354533392a713_9366/Boty_Superstar_II_cerna_JI0079_01_standard.jpg",
+                "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7c1cfa6f04944bf18a2d1faee1e4762b_9366/Boty_Superstar_II_cerna_JI0079_02_standard_hover.jpg",
+                "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e696998c43e3451c96af7c2d700901f6_9366/Boty_Superstar_II_cerna_JI0079_04_standard.jpg",
+                "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/285a6d307c404a48835e447a6daaa66c_9366/Boty_Superstar_II_cerna_JI0079_09_standard.jpg"
+            ],
+            "rating": 4.66,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "black",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ],
+            "addInfo": [
+                "Standard size",
+                "Lacing",
+                "Leather upper",
+                "Padded tongue",
+                "Textile lining",
+                "Rubber sole",
+                "Color code: Core Black / Cloud White / Core Black",
+                "Product code: JI0079"
+            ],
+            "reviews": [
+                {
+                    "id": "1",
+                    "userName": "Olena",
+                    "userRating": 5,
+                    "date": "2026-05-12",
+                    "comment": "The shoes are just great! Very comfortable, the size fit perfectly. Fast delivery."
+                },
+                {
+                    "id": "2",
+                    "userName": "Mike",
+                    "userRating": 4,
+                    "date": "2026-05-28",
+                    "comment": "The sneakers are cool, but a little wide for a narrow foot. Top quality!"
+                },
+                {
+                    "id": "3",
+                    "userName": "Sidni",
+                    "userRating": 5,
+                    "date": "2026-06-09",
+                    "comment": "The shoes are just great! Very comfortable, the size fit perfectly. Fast delivery."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Boty Superstar II",
+            "brand": "adidas",
+            "model": "Superstar",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a9c4cf63ca634c26a911dc5b21e5c377_9366/Boty_Superstar_II_seda_JQ3222_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 4,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "gray",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Boty Handball Spezial",
+            "brand": "adidas",
+            "model": "Spezial",
+            "price": 2699,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/c60e289b0cfc47d9b9745104ddb355f6_9366/Boty_Handball_Spezial_hneda_JQ8411_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "brown",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Boty Sambae",
+            "brand": "adidas",
+            "model": "Sambae",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/51fa97b24eb5404b809c29a39a87fca4_9366/Boty_Samba_bila_JI1349_01_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 1959,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "white",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Obuv OZWEEGO",
+            "brand": "adidas",
+            "model": "OZWEEGO",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/86dbbccdb3db4f5f846eaa7600ee8b42_9366/Obuv_OZWEEGO_cerna_EE6999_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 4,
+            "onSale": true,
+            "newPrice": 1763,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "black",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Boty Campus 00s",
+            "brand": "adidas",
+            "model": "Campus",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9b41c1693e254b828d98bc61a9a619c3_9366/Boty_Campus_00s_Purpurova_JQ8349_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 1959,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "red",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Boty Adizero Boston 12",
+            "brand": "adidas",
+            "model": "Adizero",
+            "price": 3899,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/13786967a336486e930f4486111701f1_9366/Boty_Adizero_Boston_12_modra_JI4477_HM1.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 2535,
+            "audience": "men",
+            "category": "running",
+            "color": "black",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Tréninková obuv Dropset 3",
+            "brand": "adidas",
+            "model": "Dropset",
+            "price": 2999,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/3ce6dc386217438ead9ee247baa978e2_9366/Treninkova_obuv_Dropset_3_cerna_IG3861_HM1.jpg",
+            "rating": 0,
+            "popularity": 4,
+            "onSale": true,
+            "newPrice": 2249,
+            "audience": "men",
+            "category": "running",
+            "color": "black",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Boty Campus 00s",
+            "brand": "adidas",
+            "model": "Campus",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1dc2d071ab5483bb1ece0ec7a7bd574_9366/Boty_Campus_00s_bila_ID1435_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 2099,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "beige",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Pantofle Adilette 22",
+            "brand": "adidas",
+            "model": "Pantofle",
+            "price": 1599,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0f8ccddbc11845d5bf81afc700fc6d35_9366/Pantofle_Adilette_22_seda_HP6522_HM1.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "men",
+            "category": "sandals",
+            "color": "black",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Boty Campus 00s",
+            "brand": "adidas",
+            "model": "Campus",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/48e784d28ae44c6189fdc008cf99a8f8_9366/Boty_Campus_00s_modra_JR8163_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 4,
+            "onSale": true,
+            "newPrice": 2099,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "blue",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Shadow Fever Shoes",
+            "brand": "adidas",
+            "model": "Shadow",
+            "price": 2999,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9d1cd84c1f42405a9af485967d15e1b3_9366/Shadow_Fever_Shoes_bezova_JR8214_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 1949,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "beige",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Boty Gazelle Indoor",
+            "brand": "adidas",
+            "model": "Gazelle",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e5db3307cf524ed29c4bd298b2ed499e_9366/Boty_Gazelle_Indoor_Purpurova_JI0324_01_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 2239,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "red",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Boty Forum Low CL",
+            "brand": "adidas",
+            "model": "Forum",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e2577a3fc9742cb8a684573e24abe94_9366/Boty_Forum_Low_CL_bila_JQ0206_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 4,
+            "onSale": true,
+            "newPrice": 1819,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "white",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Boty Treziod 2.0",
+            "brand": "adidas",
+            "model": "Treziod",
+            "price": 1899,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/6b13d112cf01454e95367ab9800107a0_9366/Boty_Treziod_2.0_seda_IH3802_01_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 1425,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "white",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Boty Stabil 16 Indoor",
+            "brand": "adidas",
+            "model": "Stabil",
+            "price": 3899,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/00908943d7574d16b9febebdd2132f18_9366/Boty_Stabil_16_Indoor_bila_JP5770_01_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 2729,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "white",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Boty Adizero EVO SL",
+            "brand": "adidas",
+            "model": "Adizero",
+            "price": 3599,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/d43823e6f341472896ef52cc49d11177_9366/Boty_Adizero_EVO_SL_hneda_JS4446_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "women",
+            "category": "running",
+            "color": "brown",
+            "sizes": [
+                {
+                    "value": 35,
+                    "isAvailable": true
+                },
+                {
+                    "value": 36,
+                    "isAvailable": false
+                },
+                {
+                    "value": 37,
+                    "isAvailable": true
+                },
+                {
+                    "value": 38,
+                    "isAvailable": true
+                },
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": true
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Boty Handball Spezial",
+            "brand": "adidas",
+            "model": "Handball",
+            "price": 2799,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/590ba6dd3ec942b382dc721f678f71eb_9366/Boty_Handball_Spezial_bezova_JR4881_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "women",
+            "category": "lifestile",
+            "color": "beige",
+            "sizes": [
+                {
+                    "value": 35,
+                    "isAvailable": true
+                },
+                {
+                    "value": 36,
+                    "isAvailable": false
+                },
+                {
+                    "value": 37,
+                    "isAvailable": true
+                },
+                {
+                    "value": 38,
+                    "isAvailable": true
+                },
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": true
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Boty Superstar II",
+            "brand": "adidas",
+            "model": "Superstar",
+            "price": 2999,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/04911f45c7884c759fc73ab6ee0ee9f5_9366/Boty_Superstar_II_cerna_JH9475_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 3,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "women",
+            "category": "lifestile",
+            "color": "black",
+            "sizes": [
+                {
+                    "value": 35,
+                    "isAvailable": true
+                },
+                {
+                    "value": 36,
+                    "isAvailable": false
+                },
+                {
+                    "value": 37,
+                    "isAvailable": true
+                },
+                {
+                    "value": 38,
+                    "isAvailable": true
+                },
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": true
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Boty Tensaur Run 2.0 Kids",
+            "brand": "adidas",
+            "model": "Tensaur",
+            "price": 899,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7105cafb033141ff96434cc250674626_9366/Boty_Tensaur_Run_2.0_Kids_ruzova_IE5990_01_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "kids",
+            "category": "running",
+            "color": "pink",
+            "sizes": [
+                {
+                    "value": 28,
+                    "isAvailable": true
+                },
+                {
+                    "value": 29,
+                    "isAvailable": false
+                },
+                {
+                    "value": 30,
+                    "isAvailable": true
+                },
+                {
+                    "value": 31,
+                    "isAvailable": true
+                },
+                {
+                    "value": 32,
+                    "isAvailable": true
+                },
+                {
+                    "value": 33,
+                    "isAvailable": true
+                },
+                {
+                    "value": 34,
+                    "isAvailable": true
+                },
+                {
+                    "value": 35,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Dětské boty Barreda Decode",
+            "brand": "adidas",
+            "model": "Barreda",
+            "price": 1299,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a954419a27543c3913bd02753461dfd_9366/Detske_boty_Barreda_Decode_modra_JR0757_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 844,
+            "audience": "kids",
+            "category": "lifestile",
+            "color": "blue",
+            "sizes": [
+                {
+                    "value": 28,
+                    "isAvailable": true
+                },
+                {
+                    "value": 29,
+                    "isAvailable": false
+                },
+                {
+                    "value": 30,
+                    "isAvailable": true
+                },
+                {
+                    "value": 31,
+                    "isAvailable": true
+                },
+                {
+                    "value": 32,
+                    "isAvailable": true
+                },
+                {
+                    "value": 33,
+                    "isAvailable": true
+                },
+                {
+                    "value": 34,
+                    "isAvailable": true
+                },
+                {
+                    "value": 35,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Boty VL Court Bold Lifestyle Kids",
+            "brand": "adidas",
+            "model": "Court",
+            "price": 1599,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/3fd0cd267b0d4e06a544516cf2cd3412_9366/Boty_VL_Court_Bold_Lifestyle_Kids_oranzova_JI1019_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 1199,
+            "audience": "kids",
+            "category": "lifestile",
+            "color": "beige",
+            "sizes": [
+                {
+                    "value": 28,
+                    "isAvailable": true
+                },
+                {
+                    "value": 29,
+                    "isAvailable": false
+                },
+                {
+                    "value": 30,
+                    "isAvailable": true
+                },
+                {
+                    "value": 31,
+                    "isAvailable": true
+                },
+                {
+                    "value": 32,
+                    "isAvailable": true
+                },
+                {
+                    "value": 33,
+                    "isAvailable": true
+                },
+                {
+                    "value": 34,
+                    "isAvailable": true
+                },
+                {
+                    "value": 35,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Dětské boty adidas Disney Jasmine Grand Court 2.0",
+            "brand": "adidas",
+            "model": "Disney",
+            "price": 1099,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/6e0c917e4b064e3bae566935bc555348_9366/Detske_boty_adidas_Disney_Jasmine_Grand_Court_2.0_zelena_JR4919_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": true,
+            "newPrice": 749,
+            "audience": "kids",
+            "category": "lifestile",
+            "color": "blue",
+            "sizes": [
+                {
+                    "value": 28,
+                    "isAvailable": true
+                },
+                {
+                    "value": 29,
+                    "isAvailable": false
+                },
+                {
+                    "value": 30,
+                    "isAvailable": true
+                },
+                {
+                    "value": 31,
+                    "isAvailable": true
+                },
+                {
+                    "value": 32,
+                    "isAvailable": true
+                },
+                {
+                    "value": 33,
+                    "isAvailable": true
+                },
+                {
+                    "value": 34,
+                    "isAvailable": true
+                },
+                {
+                    "value": 35,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Dětské boty Superstar Winter Trek",
+            "brand": "adidas",
+            "model": "Superstar",
+            "price": 2199,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/08972736d6d0486f87809276e1f1ca67_9366/Detske_boty_Superstar_Winter_Trek_hneda_JQ0343_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "kids",
+            "category": "lifestile",
+            "color": "brown",
+            "sizes": [
+                {
+                    "value": 28,
+                    "isAvailable": true
+                },
+                {
+                    "value": 29,
+                    "isAvailable": false
+                },
+                {
+                    "value": 30,
+                    "isAvailable": true
+                },
+                {
+                    "value": 31,
+                    "isAvailable": true
+                },
+                {
+                    "value": 32,
+                    "isAvailable": true
+                },
+                {
+                    "value": 33,
+                    "isAvailable": true
+                },
+                {
+                    "value": 34,
+                    "isAvailable": true
+                },
+                {
+                    "value": 35,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Jabbar Hi Shoes",
+            "brand": "adidas",
+            "model": "Jabbar",
+            "price": 2999,
+            "photo": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5baba7ece3e34b82b87aeb0d27d25118_9366/Jabbar_Hi_Shoes_bila_JS0799_01_00_standard.jpg",
+            "rating": 0,
+            "popularity": 3,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "women",
+            "category": "lifestile",
+            "color": "beige",
+            "sizes": [
+                {
+                    "value": 35,
+                    "isAvailable": true
+                },
+                {
+                    "value": 36,
+                    "isAvailable": false
+                },
+                {
+                    "value": 37,
+                    "isAvailable": true
+                },
+                {
+                    "value": 38,
+                    "isAvailable": true
+                },
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": true
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "New Balance U204L",
+            "brand": "New Balance",
+            "model": "U204L",
+            "price": 3299,
+            "photo": "https://newbalance.cz/picture/fit-in/1000x1000/smart/filters:fill(white):quality(75)/858980af06a4ba8c007346ef5c378763.png",
+            "rating": 0,
+            "popularity": 5,
+            "onSale": false,
+            "newPrice": 0,
+            "audience": "men",
+            "category": "lifestile",
+            "color": "beige",
+            "sizes": [
+                {
+                    "value": 39,
+                    "isAvailable": true
+                },
+                {
+                    "value": 40,
+                    "isAvailable": false
+                },
+                {
+                    "value": 41,
+                    "isAvailable": true
+                },
+                {
+                    "value": 42,
+                    "isAvailable": true
+                },
+                {
+                    "value": 43,
+                    "isAvailable": true
+                },
+                {
+                    "value": 44,
+                    "isAvailable": true
+                },
+                {
+                    "value": 45,
+                    "isAvailable": true
+                }
+            ]
+        }
+    ]
+}

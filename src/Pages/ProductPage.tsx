@@ -18,7 +18,7 @@ const CATEGORY_ORDER = ["lifestile", "running", "sandals", "slipOn"];
 
 export default function ProductPage({ category, audience }: { category: string, audience: string }) {
 
-    const data = raw as Product[];
+    const data = raw.shoes as Product[];
 
     const [searchText, setSearchText] = useState("");
 
