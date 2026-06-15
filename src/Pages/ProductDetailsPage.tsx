@@ -7,12 +7,13 @@ import { Product } from "../types/types"
 import formatDate from "../utilities/utilities"
 import ProductRating from "../Components/ProductRating";
 import Button from "../Components/Button";
-import Dropdown from "../Components/DropdownList";
-import { useAppDispatch } from "../redux-toolkit/hooks";
+import Dropdown from "../Components/Dropdown";
+import { useAppDispatch, useAppSelector } from "../redux-toolkit/hooks";
 import { addToCart } from "../redux-toolkit/cart/cartSlice";
 import EmptyHeart from "../Img/emptyHeart.svg"
 import FullHeart from "../Img/fullHeart.svg"
 import Share from "../Img/share.svg"
+import { addToFavourite, removeFromFavourite } from "../redux-toolkit/favourite/favouriteSlice";
 
 type TabType = 'details' | 'review' | 'similar';
 
@@ -22,7 +23,6 @@ export default function ProductDetailsPage() {
     const data = raw.shoes as Product[];
     const product = data.find((product) => String(product.id) === id)
 
-    const [clickFavouriteBtn, setClickFavouriteBtn] = useState(false);
     const [selectedSize, setSelectedSize] = useState<number>();
     const [isSelectedSize, setIsSelectedSize] = useState<boolean>();
 
@@ -56,6 +56,11 @@ export default function ProductDetailsPage() {
     }
 
     const dispatch = useAppDispatch();
+
+    const productIsFavoure = useAppSelector(state =>
+        state.favourite.items.some((i) => i.id === product?.id)
+    )
+
 
     if (!product) return (
         <div className="p-14"><h2 className="bg-gray-100 rounded-full py-7 px-10 text-3xl text-blue-900 font-medium">No products found</h2></div>
@@ -143,8 +148,15 @@ export default function ProductDetailsPage() {
                     <div className={`w-full flex justify-between items-start mb-3 sm:mb-6`}>
                         <h2 className="text-xl sm:text-4xl font-bold">{product.name}</h2>
                         <div className="flex gap-4 items-center">
-                            <button className="cursor-pointer" onClick={() => setClickFavouriteBtn(el => !el)}>
-                                <img className="w-7 sm:w-8" src={clickFavouriteBtn ? FullHeart : EmptyHeart} alt="Favorite icon" />
+                            <button className="cursor-pointer"
+                                onClick={() => {
+                                    if (productIsFavoure) {
+                                        dispatch(removeFromFavourite({ id: product.id }));
+                                    } else {
+                                        dispatch(addToFavourite({ product }));
+                                    }
+                                }}>
+                                <img className="w-7 sm:w-8" src={productIsFavoure ? FullHeart : EmptyHeart} alt="Favorite icon" />
                             </button>
                             <button className="cursor-pointer" onClick={() => handleShare()}>
                                 <img className="w-7 sm:w-8" src={Share} alt="Share icon" />

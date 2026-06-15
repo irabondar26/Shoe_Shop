@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Dropdown from "../Components/DropdownList";
+import Dropdown from "../Components/Dropdown";
 import raw from "../data.json";
 import { Product, FilterData } from "../types/types";
 import Search from "../Img/Search.svg";

@@ -89,6 +89,10 @@ interface CartItem extends Product {
   quantity: number;
 }
 
- export interface CartState {
+export interface CartState {
   items: CartItem[];
+}
+
+export interface FavouriteState {
+  items: Product[];
 }

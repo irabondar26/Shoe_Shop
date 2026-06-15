@@ -1,5 +1,6 @@
 import { configureStore, Middleware } from "@reduxjs/toolkit";
 import cartReducer from "./cart/cartSlice";
+import favouriteReducer from "./favourite/favouriteSlice";
 
 const cartLocalStorageMiddleware: Middleware = (storeAPI) => (next) => (action) => {
     const result = next(action);
@@ -20,6 +21,7 @@ const cartLocalStorageMiddleware: Middleware = (storeAPI) => (next) => (action) 
 export const store = configureStore({
     reducer: {
         cart: cartReducer,
+        favourite:favouriteReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(cartLocalStorageMiddleware),

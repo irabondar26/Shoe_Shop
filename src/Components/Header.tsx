@@ -22,6 +22,7 @@ export default function Header() {
     const location = useLocation();
 
     const countItemsCart = useAppSelector((state) => state.cart.items.length);
+    const countItemsFavourite = useAppSelector((state) => state.favourite.items.length);
 
     const [activeButton, setActiveButton] = useState<string>(() => getActiveFromPath(location.pathname));
     const [isOpenHeader, setIsOpenHeader] = useState(false);
@@ -191,11 +192,14 @@ export default function Header() {
                     </ul>
                     {/* ${isOpenHeader ? "hidden" : "flex"} */}
                     <ul className={`flex gap-3`}>
-                        <li><NavLink to="/cart">
+                        <li className="relative" ><NavLink to="/favourites">
                             {isOpenHeader ?
                                 <img src={FavoriteWhite} alt="Heart" />
                                 :
                                 <img src={FavoriteBlue} alt="Heart" />}
+                            {countItemsFavourite !== 0 ?
+                                <span className="bg-yellow-400 w-4 h-4 text-white text-xs font-semibold block rounded-full absolute -top-1 -right-1 ">{countItemsFavourite}</span>
+                                : null}
                         </NavLink></li>
                         <li className="relative">
                             <NavLink to="/cart">
